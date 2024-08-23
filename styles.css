@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use this if you included the Google Fonts link */
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Aligns the content near the top */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Aligns content near the top */
     background-image: url('background.jpg'); /* Replace with your image file name */
     background-size: cover;
     background-position: center;
@@ -14,12 +14,11 @@ body {
 .container {
     text-align: center;
     color: white;
-    padding-top: 20px; /* Space from the top */
-    width: 100%; /* Full width to center the text */
+    padding-top: 10%; /* Adjust to move text higher from the top */
+    width: 100%; /* Full width to center text horizontally */
 }
 
 h1 {
     font-size: 2.5em; /* Adjust size as needed */
-    font-family: 'Helvetica', sans-serif; /* Good font for a modern look */
     margin: 0;
 }
