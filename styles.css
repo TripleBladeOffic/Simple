@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: url('background.jpg'); /* Image path */
+    align-items: flex-start; /* Aligns the content near the top */
+    background-image: url('background.jpg'); /* Replace with your image file name */
     background-size: cover;
     background-position: center;
 }
@@ -14,9 +14,12 @@ body {
 .container {
     text-align: center;
     color: white;
-    padding: 20px;
+    padding-top: 20px; /* Space from the top */
+    width: 100%; /* Full width to center the text */
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em; /* Adjust size as needed */
+    font-family: 'Helvetica', sans-serif; /* Good font for a modern look */
+    margin: 0;
 }
