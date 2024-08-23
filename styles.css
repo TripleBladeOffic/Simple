@@ -3,13 +3,13 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #fff;
-    background: url('https://example.com/your-ambient-background.jpg') no-repeat center center fixed;
+    background: url('https://ma-hub.imgix.net/wp-images/2019/05/29222105/royalty-free-music-Ambient.jpg') no-repeat center center fixed;
     background-size: cover;
     text-align: center;
 }
 
 header {
-    padding: 20px; /* Reduced padding for a smaller top bar */
+    padding: 20px; /* Smaller top bar */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
     position: absolute;
     top: 0;
