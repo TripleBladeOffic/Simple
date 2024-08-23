@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1, #fad0c4, #ff9a9e);
+  background-size: 200% 200%;
+  background-attachment: fixed; /* Keeps the gradient fixed */
+  transition: background-color 1s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative; /* Ensures stacking context */
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.scroll-container {
+  height: 150vh;
+  padding-top: 10vh; /* Moved boxes higher up */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Ensures stacking context */
+}
+
+.box {
+  width: 600px; /* Increased box size */
+  height: auto;
+  padding: 30px;
+  background-color: rgba(220, 220, 220, 0.8); /* Translucent grey for the boxes */
+  border: 2px solid white;
+  margin: 40px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  color: #333; /* Darker text for contrast */
+  text-align: center;
+  border-radius: 10px;
+  position: relative; /* Ensures layering */
+  z-index: 1; /* Ensure boxes are above other elements */
+}
+
+.box h2 {
+  margin-bottom: 10px;
+}
+
+.box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.visible-body {
+  background-color: #4A4A4A; /* Softer grey for the background */
+  transition: background-color 1s ease;
+}
+
